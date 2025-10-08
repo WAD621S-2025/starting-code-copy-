@@ -802,7 +802,7 @@ input:checked + .slider-round:before {
   /* HINT: Use display, position, top/left, width, height, background-color, z-index, justify-content, and align-items */
   display: flex;
   position: fixed;
-  top: 0;
+  top:0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -931,7 +931,7 @@ input:checked + .slider-round:before {
   /* TODO: Add accordion content styles */
   /* HINT: Use padding, max-height, overflow, and transition */
   padding: 0;
-  max-height: 0;
+  max-height: 1px;
   overflow: hidden;
   transition: max-height 0.3s ease;
 }
@@ -1310,7 +1310,7 @@ input:checked + .slider-round:before {
 .customization-panel.open {
   /* TODO: Add styles for open customization panel */
   /* HINT: Use transform */
-   transform: translateX(300px);
+ transform: translateX(300px);
 }
 
 .panel-toggle {
@@ -1405,7 +1405,8 @@ input:checked + .slider-round:before {
 
   .component-grid {
     /* Change grid to single column */
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /*stacks them vertically*/
+    gap: 10px;
   }
 
   .btn-group {
